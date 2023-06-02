@@ -24,6 +24,7 @@ The extension templates are python files with gaps that the extender is meant to
 A full developer setup is typically not required to implement a custom estimator compatible with sktime.
 
 # An Introduction to Polars
+
 06-02, 11:00–12:30 (Europe/London), Minories
 
 https://tinyurl.com/pydatapolars
@@ -55,3 +56,30 @@ Row based operations
 Advanced Workflow
 A note about multicore - polars is Rust under the hood and the correctness allows for a clean multicore processing capacity. We will spend five minutes demonstrating this on a large data-set.
 Case study, lazy geospatial processing: The final part of the tutorial will be a case study example of efficient geospatial lazy processing. In this we will go through the efficiency gains of using the lazy interface to filter a large collection of geospatial data in a multicore way, to find points within defined polygonal shapes. We will show that large amounts of data can be processed efficiently even on relative small setup, and complex filters can be applied to disk backed data.
+
+
+# Bring best practices to your messy data science team!
+
+06-02, 13:30–15:00 (Europe/London), Minories
+
+This session's header image
+If part of your job is to constantly poke your fellow data scientist to isolate projects environments, updating requirements, cleaning code, writing consistent docstrings, etc., then you should definitely join us for this very hands-on tutorial with reproducibility, compliance, and consistency in mind
+
+We will be covering:
+- What is pipx and why using it
+- Managing virtual environments and dependencies using pyproject.toml, venv, and pip-tools
+- Running pre-commit hooks (black, ruff, isort, pydocstyle, sqlfluff, and a few more!)
+- Automating commands using Make with a Makefile
+- Bonus: VSCode integration
+
+Code and slides: https://github.com/DrGabrielHarris/pydata-london-2023
+
+https://www.gnu.org/home.en.html
+
+Website: https://12ft.io/
+
+Not using in Poetry instead using pip-tools
+
+https://pip-tools.readthedocs.io/en/latest/
+
+https://www.pydocstyle.org/en/stable/
