@@ -1,6 +1,8 @@
-# pydata_london_2023
+# PyData London June 2023
 
 The London PyData Conference June 2023
+
+https://github.com/sktime/sktime-tutorial-pydata-london-2023/tree/main
 
 # sktime - python toolbox for time series: how to implement your own estimator
 06-17, 09:00–10:30 (Europe/London), Tower Suite 1
