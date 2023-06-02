@@ -2,7 +2,14 @@
 
 The London PyData Conference June 2023
 
-# sktime - python toolbox for time series: how to implement your own estimator
+# PyData Bristol 
+
+https://www.meetup.com/pydata-bristol/events/293860053/
+
+Thursday, June 15, 2023 at 6:00 PM to 8:30 PM BST
+Cookpad, 1 Broad Plain, Bristol
+
+# 01 sktime - python toolbox for time series: how to implement your own estimator
 06-17, 09:00–10:30 (Europe/London), Tower Suite 1
 
 https://github.com/sktime/sktime-tutorial-pydata-london-2023/tree/main
@@ -23,7 +30,7 @@ The extension templates are python files with gaps that the extender is meant to
 
 A full developer setup is typically not required to implement a custom estimator compatible with sktime.
 
-# An Introduction to Polars
+# 02 An Introduction to Polars
 
 06-02, 11:00–12:30 (Europe/London), Minories
 
@@ -58,7 +65,7 @@ A note about multicore - polars is Rust under the hood and the correctness allow
 Case study, lazy geospatial processing: The final part of the tutorial will be a case study example of efficient geospatial lazy processing. In this we will go through the efficiency gains of using the lazy interface to filter a large collection of geospatial data in a multicore way, to find points within defined polygonal shapes. We will show that large amounts of data can be processed efficiently even on relative small setup, and complex filters can be applied to disk backed data.
 
 
-# Bring best practices to your messy data science team!
+# 03 Bring best practices to your messy data science team!
 
 06-02, 13:30–15:00 (Europe/London), Minories
 
@@ -83,3 +90,13 @@ Not using in Poetry instead using pip-tools
 https://pip-tools.readthedocs.io/en/latest/
 
 https://www.pydocstyle.org/en/stable/
+
+https://github.com/charliermarsh/ruff
+
+Questions for talk https://www.canva.com/presentation/join
+
+### Package *squatting*
+
+*Typo-squatting* occurs when a malicious package is uploaded with a name 
+similar to a common package ex `pip install panda` instead of `pip install 
+pandas`

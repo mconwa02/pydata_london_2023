@@ -1,13 +1,13 @@
 """
-sktime - python toolbox for time series: how to implement your own estimator
+01_sktime - python toolbox for time series: how to implement your own estimator
 
-sktime is a widely used scikit-learn compatible library for learning with time
- series. sktime is easily extensible by anyone, and interoperable with the
- pydata/numfocus stack. This tutorial explains how to write your own sktime
- estimator, e.g., forecaster, classifier, transformer, by using sktime’s
+01_sktime is a widely used scikit-learn compatible library for learning with time
+ series. 01_sktime is easily extensible by anyone, and interoperable with the
+ pydata/numfocus stack. This tutorial explains how to write your own 01_sktime
+ estimator, e.g., forecaster, classifier, transformer, by using 01_sktime’s
  extension templates and testing framework. A custom estimator can live in any
-  local code base, and will be compatible with sktime pipelines, or
-  scikit-learn. A continuation of the sktime introductory tutorial at pydata
+  local code base, and will be compatible with 01_sktime pipelines, or
+  scikit-learn. A continuation of the 01_sktime introductory tutorial at pydata
 
 https://www.sktime.net/en/latest/
 
@@ -53,16 +53,16 @@ clf = KNeighborsTimeSeriesClassifier(n_neighbors=3, distance=mean_eucl_dist)
 clf.fit(x_train, y_train)
 y_pred = clf.predict(x_new)
 
-# panel data - sktime data formats
+# panel data - 01_sktime data formats
 # pandas Dataframe with 2-level MultiIndex
 # numpy 3D darray with index
 
 """
 sklearn tabular data
 
-sktime time series data
+01_sktime time series data
 
-sktime supports and recongises mutliple data formats - dask, xarray or
+01_sktime supports and recongises mutliple data formats - dask, xarray or
 abstract data type scitype 
 
 https://github.com/sktime/sktime-tutorial-pydata-london-2023/blob/main/notebooks/02_panel_tasks.ipynb
@@ -109,7 +109,7 @@ clst = TimeSeriesDBSCAN(distance=mean_eucl_dist)
 clst.fit(X)
 clst.get_fitted_params()
 
-# Primer on sktime transformers for feature extraction
+# Primer on 01_sktime transformers for feature extraction
 X, _ = load_osuleaf(return_type="pd-multiindex")
 detrender = Detrender()
 X_detrended = detrender.fit_transform(X)
