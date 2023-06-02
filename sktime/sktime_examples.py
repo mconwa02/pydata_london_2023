@@ -19,15 +19,18 @@ import numpy as np
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+from sktime.alignment.dtw_python import AlignerDTW
 from sktime.classification.distance_based import KNeighborsTimeSeriesClassifier
 from sktime.clustering.dbscan import TimeSeriesDBSCAN
 from sktime.datasets import load_airline, load_osuleaf, load_basic_motions, \
     load_covid_3month
 from sktime.datatypes import check_is_mtype
 from sktime.dists_kernels import AggrDist, ScipyDist
+from sktime.dists_kernels.compose_from_align import DistFromAligner
 from sktime.forecasting.naive import NaiveForecaster
 from sktime.regression.distance_based import KNeighborsTimeSeriesRegressor
 from sktime.transformations.series.detrend import Detrender
+from sktime.utils.plotting import plot_series
 
 data = datasets.load_diabetes()
 
@@ -111,3 +114,30 @@ X, _ = load_osuleaf(return_type="pd-multiindex")
 detrender = Detrender()
 X_detrended = detrender.fit_transform(X)
 X_detrended.head()
+
+#  Distances, kernels - general interface
+x, _ = load_osuleaf(return_type="numpy3d")
+x1 = x[:3]
+x2 = x[5:10]
+
+mean_euc_dist = AggrDist.create_test_instance()
+distmat = mean_euc_dist(x1, x2)
+
+# alternatively, via the transform method
+distmat = mean_euc_dist.transform(x1, x2)
+distmat_symm = mean_euc_dist.transform(x1)
+
+
+
+# Time series distances, kernels - composition
+x, _ = load_basic_motions(return_type="numpy3d")
+x = x[:3]
+x.shape
+
+# aligners - general interface
+aligner = AlignerDTW()
+aligner.fit([x1, x2])
+aligner.get_alignment()
+x1_al, x2_al = aligner.get_aligned()
+
+plot_series(x1_al.reset_index(drop=True), x2_al.reset_index(drop=True), labels=["leaf_1", "leaf_2"])
