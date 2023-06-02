@@ -2,10 +2,10 @@
 
 The London PyData Conference June 2023
 
-https://github.com/sktime/sktime-tutorial-pydata-london-2023/tree/main
-
 # sktime - python toolbox for time series: how to implement your own estimator
 06-17, 09:00–10:30 (Europe/London), Tower Suite 1
+
+https://github.com/sktime/sktime-tutorial-pydata-london-2023/tree/main
 
 sktime is a widely used scikit-learn compatible library for learning with time series. sktime is easily extensible by anyone, and interoperable with the pydata/numfocus stack. This tutorial explains how to write your own sktime estimator, e.g., forecaster, classifier, transformer, by using sktime’s extension templates and testing framework. A custom estimator can live in any local code base, and will be compatible with sktime pipelines, or scikit-learn. A continuation of the sktime introductory tutorial at pydata [link]
 
@@ -48,6 +48,7 @@ File reading basics - the standard operations to read data into a dataframe from
 Accessing columns
 Filtering - filtering is composed quite nicely in polars, so we will go through a few examples
 Grouping - grouping is again nicely multicore
+
 ### Joining
 
 Row based operations
