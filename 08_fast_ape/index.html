@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Fast API - PyData Conference Notes</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PyData Conference Notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../01_sktime/" class="nav-link">sktime talk</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../02_polars/" class="nav-link">polars</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../03_best_practises/" class="nav-link">python best practises</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../04_delta_lake/" class="nav-link">Spark an Delta Lakes</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../05_large_language_models/" class="nav-link">LLMs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../06_ml_platforms/" class="nav-link">ML Platforms</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../07_pydata_for_executives/" class="nav-link">PyData Executives</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Fast API</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../09_pandas_polar/" class="nav-link">Pandas 2</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../07_pydata_for_executives/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../09_pandas_polar/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#fastapi-facts-we-wish-wed-known-beforehand" class="nav-link">✨ fastAPI facts we wish we'd known beforehand.</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#why-fast-api" class="nav-link">Why Fast API</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="fastapi-facts-we-wish-wed-known-beforehand">✨ fastAPI facts we wish we'd known beforehand.</h1>
+<p>Spoiler: It's not about getting started.</p>
+<p>06-03, 11:45–12:25 (Europe/London), Salisbury</p>
+<p>An exchange of views on fastAPI in practice.</p>
+<p>FastAPI has become an integral part of the PyData ecosytem. FastAPI is great, it helps many engineers create REST APIs based on the OpenAPI standard and run them asynchronously. It has a thriving community and educational documentation.</p>
+<p>FastAPI does a great job of getting people started with APIs quickly.</p>
+<p>This talk will point out some obstacles and dark spots that I wish we had known about before. In this talk we want to highlight solutions based on experience building a data hub in asset management.</p>
+<p>An exchange of views on fastAPI in practice.</p>
+<p>FastAPI is great, it helps many developers create REST APIs based on the OpenAPI standard and run them asynchronously. It has a thriving community and educational documentation.</p>
+<p>FastAPI does a great job of getting people started with APIs quickly.</p>
+<p>This talk will point out some obstacles and dark spots that I wish we had known about before. In this talk we want to highlight solutions.</p>
+<p>This talk will include the following:</p>
+<h3 id="pydantic">pydantic</h3>
+<p>fastAPI is built on the shoulders of giants I: pydantic
+FastAPI makes extensive use of [pydantic. pydantic]!(https://docs.pydantic.dev/) parses data, can 
+validate (and transform) data, and has built-in interfaces to export OpenAPI definitions among many other features.</p>
+<h3 id="starlette">starlette</h3>
+<p>fastAPI is built on the shoulders of giants I: [starlette]!(https://www.starlette.io/)
+Routes and middleware are managed by starlette. In this section we will explore how to create custom middleware and what we learned along the way.</p>
+<p>fastAPI has tutorials, but is this documentation?
+The fastAPI page provides a good introduction. The more we worked with fastAPI, the harder it was to find accurate documentation. Looking at the source code, we really missed DocStrings! Introspection to the rescue - will probably include a rant about missing DocStrings!</p>
+<h3 id="pydantic_1">pydantic</h3>
+<p>DRY ("Don't repeat yourself") with pydantic
+For our use case, we decided to use strict models to validate our data structures, as we work in a highly regulated industry where no mistakes are allowed to happen. Setting up the REST API was much easier than developing consistent models that generalise well. We follow the "single source of truth" paradigm, entering redundant definitions is an absolute no-go.
+In this section we show how to create highly reusable pydantic model pools with inheritance for use in fastAPI. For testing, we also created models from metadata!</p>
+<p>"The road not taken": pydantic Depends()!
+API routes often consist of a request model and a response model. But what about cases where the models alone don't work and a model and e.g. query parameters need to be mixed?
+Apart from flake8 complaining about having callables in the signature, this can be quite a difficult use case. Strategies for resolving model/parameter conflicts.</p>
+<p>Bonus - if time:</p>
+<p>Integrating fastAPI with Sphinx.
+Demonstrate how to integrate OpenAPI with your Sphinx documentation.</p>
+<p>Based on experience building a data hub in asset management, the talk will show how fastAPI is built and how well introspection can help you understand what is going on under the hood and which library is actually doing the heavy lifting where.</p>
+<h2 id="why-fast-api">Why Fast API</h2>
+<p>High performance web framework</p>
+<p>instead of flask</p>
+<p>custom python package interface to </p>
+<p>FASTAPI current version </p>
+<p>259 classes
+6022 lines of code
+more docstrings</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>polars - PyData Conference Notes</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PyData Conference Notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../01_sktime/" class="nav-link">sktime talk</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">polars</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../03_best_practises/" class="nav-link">python best practises</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../04_delta_lake/" class="nav-link">Spark an Delta Lakes</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../05_large_language_models/" class="nav-link">LLMs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../06_ml_platforms/" class="nav-link">ML Platforms</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../07_pydata_for_executives/" class="nav-link">PyData Executives</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../08_fast_ape/" class="nav-link">Fast API</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../09_pandas_polar/" class="nav-link">Pandas 2</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../01_sktime/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../03_best_practises/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#02-an-introduction-to-polars" class="nav-link">02 An Introduction to Polars</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="02-an-introduction-to-polars">02 An Introduction to Polars</h1>
+<p>06-02, 11:00–12:30 (Europe/London), Minories</p>
+<p>https://tinyurl.com/pydatapolars</p>
+<p>Uses Rust terms
+Polars is a next generation data-frame library which aims to be fast, efficient, composable and lazy! This introductory tutorial will take you through the basics of getting started with polars in Python. We will demonstrate the out the box multi-core efficiencies, by composing advanced filters and joins, before comparing with the traditional pandas workflows. As a finale we will look at some lazy processing when applying polars to large scale data-sets.</p>
+<h3 id="background">Background</h3>
+<p>The tutorial targets intermediate data-scientists who use pandas as a part of their existing data science tool-kit.
+The central premise of the tutorial is that polars is faster and more composable resulting in a cleaner and more productive work flows.</p>
+<p>The ultimate aim of this tutorial is to "convert" pandas users to polars :) !</p>
+<h3 id="introduction">Introduction</h3>
+<p>Installation - basic installation using pip
+Data type basics - column types and coalescing
+Interop with pandas/numpy - how this relates to the traditional numpy dtypes
+File reading basics - the standard operations to read data into a dataframe from a host of different formats</p>
+<h3 id="standard-workflow">Standard Workflow</h3>
+<p>Accessing columns
+Filtering - filtering is composed quite nicely in polars, so we will go through a few examples
+Grouping - grouping is again nicely multicore</p>
+<h3 id="joining">Joining</h3>
+<p>Row based operations
+Advanced Workflow
+A note about multicore - polars is Rust under the hood and the correctness allows for a clean multicore processing capacity. We will spend five minutes demonstrating this on a large data-set.
+Case study, lazy geospatial processing: The final part of the tutorial will be a case study example of efficient geospatial lazy processing. In this we will go through the efficiency gains of using the lazy interface to filter a large collection of geospatial data in a multicore way, to find points within defined polygonal shapes. We will show that large amounts of data can be processed efficiently even on relative small setup, and complex filters can be applied to disk backed data.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
