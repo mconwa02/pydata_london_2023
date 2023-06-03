@@ -1,6 +1,7 @@
 # Executives at PyData
 
 06-03, 11:00–11:40 (Europe/London), Beaumont 
+
 Executives at PyData is a facilitated discussion session for executives and leaders to discuss challenges around designing and delivering successful data projects, organizational communication, product management and design, hiring, and team growth.
 
 We'll announce the agenda at the start of the session, you can ask questions or raise issues to get feedback from other leaders in the room, NumFOCUS board members and Ian and James.

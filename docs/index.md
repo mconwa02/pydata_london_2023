@@ -1,15 +1,40 @@
 # PyData London June 2023
 
-https://london2023.pydata.org/cfp/schedule/
+[pydata.org](https://london2023.pydata.org/cfp/schedule/)
 
-- sktime talk 
-- polars 
-- python best practises 
-- Spark an Delta Lakes 
-- LLMs 
-- ML Platforms 
+## Project layout
 
-## Welcome to MkDocs
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        01_sktime.md # sktime talk 
+        02_polars.md # polars 
+        03_best_practises.md # python best practises 
+        04_delta_lake.md # Spark an Delta Lakes 
+        05_large_language_models.md # LLMs 
+        06_ml_platforms.md # ML Platforms 
+        08_fast_ape.md # Fast API
+
+## Pydata Demos and Talks
+    
+[Sktime - python toolbox for time series](01_sktime.md)
+
+[An Introduction to Polars](02_polars.md)
+
+[Bring best practices to your messy data science team!](03_best_practises.md)
+
+[Delta Lake 101: How many water metaphors does it take to describe data?](04_delta_lake.md)
+
+[Large Language Models: From Prototype to Production](05_large_language_models.md)
+
+[The Opinionated Python Stack](06_ml_platforms.md)
+
+[Executives at PyData](07_pydata_for_executives.md)
+
+[Fast API facts we wish we'd known beforehand](08_fast_ape.md)
+
+
+## Built using MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -20,9 +45,3 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
