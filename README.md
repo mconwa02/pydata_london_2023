@@ -128,7 +128,7 @@ bring. Additionally, you will gain insight into how the wider open-source
 community is utilizing Delta Lake as an open standard to develop the next 
 generation of data engineering and data science tools in Python.
 
-https://delta.io/
+(delta)![https://delta.io/]
 
 
 1.7+ Exabytes processed a day

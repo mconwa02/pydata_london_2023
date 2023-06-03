@@ -25,12 +25,13 @@ This talk will include the following:
 ### pydantic
 
 fastAPI is built on the shoulders of giants I: pydantic
-FastAPI makes extensive use of pydantic. pydantic parses data, can validate (and transform) data, and has built-in interfaces to export OpenAPI definitions among many other features.
+FastAPI makes extensive use of [pydantic. pydantic]!(https://docs.pydantic.dev/) parses data, can 
+validate (and transform) data, and has built-in interfaces to export OpenAPI definitions among many other features.
 
 
 ### starlette
 
-fastAPI is built on the shoulders of giants I: starlette
+fastAPI is built on the shoulders of giants I: [starlette]!(https://www.starlette.io/)
 Routes and middleware are managed by starlette. In this section we will explore how to create custom middleware and what we learned along the way.
 
 fastAPI has tutorials, but is this documentation?
@@ -60,3 +61,10 @@ High performance web framework
 instead of flask
 
 custom python package interface to 
+
+
+FASTAPI current version 
+
+259 classes
+6022 lines of code
+more docstrings
