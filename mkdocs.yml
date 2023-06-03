@@ -1,7 +1,12 @@
-site_name: My Docs
+site_name: PyData Conference Notes
 
 nav:
   - Home: index.md
   - PyData:
-        05_large_language_models.md
-        05_ml_platforms.md
+      - sktime talk: 01_sktime.md
+      - polars: 02_polars.md
+      - python best practises: 03_best_practises.md
+      - Spark an Delta Lakes: 04_delta_lake.md
+      - LLMs: 05_large_language_models.md
+      - ML Platforms:  06_ml_platforms.md
+      - PyData Executives: 07_pydata_for_executives.md

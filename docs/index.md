@@ -2,6 +2,13 @@
 
 https://london2023.pydata.org/cfp/schedule/
 
+- sktime talk 
+- polars 
+- python best practises 
+- Spark an Delta Lakes 
+- LLMs 
+- ML Platforms 
+
 ## Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
