@@ -1,0 +1,7 @@
+site_name: My Docs
+
+nav:
+  - Home: index.md
+  - PyData:
+        05_large_language_models.md
+        05_ml_platforms.md
