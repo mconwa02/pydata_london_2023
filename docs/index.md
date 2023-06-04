@@ -7,13 +7,6 @@
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        01_sktime.md # sktime talk 
-        02_polars.md # polars 
-        03_best_practises.md # python best practises 
-        04_delta_lake.md # Spark an Delta Lakes 
-        05_large_language_models.md # LLMs 
-        06_ml_platforms.md # ML Platforms 
-        08_fast_ape.md # Fast API
 
 ## Pydata Demos and Talks
     
@@ -33,6 +26,11 @@
 
 [Fast API facts we wish we'd known beforehand](08_fast_ape.md)
 
+[09_pandas_polar.md](09_pandas_polar.md)
+
+[10_new_dev_pandas_and_dask.md](10_new_dev_pandas_and_dask.md)
+
+[11_correlation_to_causation.md](11_correlation_to_causation.md)
 
 ## Built using MkDocs
 
