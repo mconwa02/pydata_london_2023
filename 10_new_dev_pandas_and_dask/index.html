@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>New Developments in Pandas and Dask Dataframes - PyData Conference Notes</title>
+        <title>Dask - PyData Conference Notes</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -63,6 +63,15 @@
                             <li class="navitem">
                                 <a href="../09_pandas_polar/" class="nav-link">Pandas 2</a>
                             </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Dask</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../11_correlation_to_causation/" class="nav-link">Correlation</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../12_taipy_for_web_app_data_science/" class="nav-link">Taipy</a>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
@@ -71,6 +80,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../09_pandas_polar/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../11_correlation_to_causation/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -100,6 +119,7 @@
 
 <h1 id="new-developments-in-pandas-and-dask-dataframes">New Developments in Pandas and Dask Dataframes</h1>
 <p>06-04, 10:15–10:55 (Europe/London), Salisbury</p>
+<p>https://github.com/pola-rs/dask-polars</p>
 <p>We're in a new era of dataframe development. Libraries like Arrow, Polars, DuckDB, Vaex, Modin, and others stretch the bounds of performance on what we think can be done with tabular data in Python. These systems have great benchmarking results and generate significant buzz on social media.</p>
 <p>Pandas, the community favorite, is also innovating, although with less buzz. Structural improvements like Arrow data types, copy on write, and more bring the world's most popular dataframe library (55% of Python users) into significantly better performance and memory use. Additionally Dask, a parallel computing library developed closely with Pandas, has also added new features in the last year, like memory-stable shuffling, task queueing, and with recent experiments in query optimization which we'll discuss as well.</p>
 <p>In this talk we'll highlight some of these new features and show the impact they make on speed and cost on real-world workloads, as well as a vision for future development.</p>
