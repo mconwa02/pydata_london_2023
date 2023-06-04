@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>PyData Conference Notes</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>New Developments in Pandas and Dask Dataframes - PyData Conference Notes</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">PyData Conference Notes</a>
+                <a class="navbar-brand" href="..">PyData Conference Notes</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,35 +33,35 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
-                                <a href="01_sktime/" class="nav-link">sktime talk</a>
+                                <a href="../01_sktime/" class="nav-link">sktime talk</a>
                             </li>
                             <li class="navitem">
-                                <a href="02_polars/" class="nav-link">polars</a>
+                                <a href="../02_polars/" class="nav-link">polars</a>
                             </li>
                             <li class="navitem">
-                                <a href="03_best_practises/" class="nav-link">python best practises</a>
+                                <a href="../03_best_practises/" class="nav-link">python best practises</a>
                             </li>
                             <li class="navitem">
-                                <a href="04_delta_lake/" class="nav-link">Spark an Delta Lakes</a>
+                                <a href="../04_delta_lake/" class="nav-link">Spark an Delta Lakes</a>
                             </li>
                             <li class="navitem">
-                                <a href="05_large_language_models/" class="nav-link">LLMs</a>
+                                <a href="../05_large_language_models/" class="nav-link">LLMs</a>
                             </li>
                             <li class="navitem">
-                                <a href="06_ml_platforms/" class="nav-link">ML Platforms</a>
+                                <a href="../06_ml_platforms/" class="nav-link">ML Platforms</a>
                             </li>
                             <li class="navitem">
-                                <a href="07_pydata_for_executives/" class="nav-link">PyData Executives</a>
+                                <a href="../07_pydata_for_executives/" class="nav-link">PyData Executives</a>
                             </li>
                             <li class="navitem">
-                                <a href="08_fast_ape/" class="nav-link">Fast API</a>
+                                <a href="../08_fast_ape/" class="nav-link">Fast API</a>
                             </li>
                             <li class="navitem">
-                                <a href="09_pandas_polar/" class="nav-link">Pandas 2</a>
+                                <a href="../09_pandas_polar/" class="nav-link">Pandas 2</a>
                             </li>
                         </ul>
 
@@ -71,16 +71,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="01_sktime/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -99,24 +89,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#pydata-london-june-2023" class="nav-link">PyData London June 2023</a>
+            <li class="nav-item" data-level="1"><a href="#new-developments-in-pandas-and-dask-dataframes" class="nav-link">New Developments in Pandas and Dask Dataframes</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#pydata-demos-and-talks" class="nav-link">Pydata Demos and Talks</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#built-using-mkdocs" class="nav-link">Built using MkDocs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -124,34 +98,20 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="pydata-london-june-2023">PyData London June 2023</h1>
-<p><a href="https://london2023.pydata.org/cfp/schedule/">pydata.org</a></p>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-</code></pre>
-<h2 id="pydata-demos-and-talks">Pydata Demos and Talks</h2>
-<p><a href="01_sktime/">Sktime - python toolbox for time series</a></p>
-<p><a href="02_polars/">An Introduction to Polars</a></p>
-<p><a href="03_best_practises/">Bring best practices to your messy data science team!</a></p>
-<p><a href="04_delta_lake/">Delta Lake 101: How many water metaphors does it take to describe data?</a></p>
-<p><a href="05_large_language_models/">Large Language Models: From Prototype to Production</a></p>
-<p><a href="06_ml_platforms/">The Opinionated Python Stack</a></p>
-<p><a href="07_pydata_for_executives/">Executives at PyData</a></p>
-<p><a href="08_fast_ape/">Fast API facts we wish we'd known beforehand</a></p>
-<p><a href="09_pandas_polar/">09_pandas_polar.md</a></p>
-<p><a href="10_new_dev_pandas_and_dask/">10_new_dev_pandas_and_dask.md</a></p>
-<p><a href="11_correlation_to_causation/">11_correlation_to_causation.md</a></p>
-<h2 id="built-using-mkdocs">Built using MkDocs</h2>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul></div>
+<h1 id="new-developments-in-pandas-and-dask-dataframes">New Developments in Pandas and Dask Dataframes</h1>
+<p>06-04, 10:15–10:55 (Europe/London), Salisbury</p>
+<p>We're in a new era of dataframe development. Libraries like Arrow, Polars, DuckDB, Vaex, Modin, and others stretch the bounds of performance on what we think can be done with tabular data in Python. These systems have great benchmarking results and generate significant buzz on social media.</p>
+<p>Pandas, the community favorite, is also innovating, although with less buzz. Structural improvements like Arrow data types, copy on write, and more bring the world's most popular dataframe library (55% of Python users) into significantly better performance and memory use. Additionally Dask, a parallel computing library developed closely with Pandas, has also added new features in the last year, like memory-stable shuffling, task queueing, and with recent experiments in query optimization which we'll discuss as well.</p>
+<p>In this talk we'll highlight some of these new features and show the impact they make on speed and cost on real-world workloads, as well as a vision for future development.</p>
+<p>We're in a new era of dataframe development. Libraries like Arrow, Polars, DuckDB, Vaex, Modin, and others stretch the bounds of performance on what we think can be done with tabular data in Python. These systems have great benchmarking results and generate significant buzz on social media.</p>
+<p>Pandas, the community favorite, is also innovating, although with less buzz. Structural improvements like Arrow data types, copy on write, and more bring the world's most popular dataframe library (55% of Python users) into significantly better performance and memory use. Additionally Dask, a parallel computing library developed closely with Pandas, has also added new features in the last year, like memory-stable shuffling, task queueing, and with recent experiments in query optimization which we'll discuss as well.</p>
+<p>In this talk we'll highlight some of these new features and show the impact they make on speed and cost on real-world workloads, as well as a vision for future development.</p>
+<p>Matthew Rocklin</p>
+<p>Matthew is an open source software developer in the numeric Python ecosystem. He maintains several PyData libraries, but today focuses mostly on Dask a library for scalable computing. Matthew worked for Anaconda Inc for several years, then built out the Dask team at NVIDIA for RAPIDS, and most recently founded Coiled to improve Python's scalability with Dask for large organizations.</p>
+<p>Matthew holds a bachelors degree from UC Berkeley in physics and mathematics, and a PhD in computer science from the University of Chicago.</p>
+<p>Website: https://matthewrocklin.com
+Dask: https://dask.org/
+Coiled: https://coiled.io</p></div>
             </div>
         </div>
 
@@ -160,11 +120,11 @@ docs/
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -229,8 +189,3 @@ docs/
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-06-04 10:19:15.110239+00:00
--->
