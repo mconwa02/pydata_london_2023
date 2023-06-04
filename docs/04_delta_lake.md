@@ -1,5 +1,3 @@
-
-
 # Delta Lake 101: How many water metaphors does it take to describe data?
 
 06-02, 15:30–17:00 (Europe/London), Warwick
