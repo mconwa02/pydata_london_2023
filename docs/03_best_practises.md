@@ -28,7 +28,7 @@ https://www.pydocstyle.org/en/stable/
 https://github.com/charliermarsh/ruff
 
 Questions for talk https://www.canva.com/presentation/join
-
+pip install panda 
 ### Package *squatting*
 
 *Typo-squatting* occurs when a malicious package is uploaded with a name 

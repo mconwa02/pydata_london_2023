@@ -1,8 +1,4 @@
-import pandas as pd
 import polars as pl
-
-dfple = pl.read_parquet()
-
 
 df = pl.DataFrame(
     {
@@ -13,4 +9,6 @@ df = pl.DataFrame(
     }
 )
 
-pl.scan_parquet().filter().groupby().agg()
+print(df)
+print(df.filter(pl.col("B") > 2))
+print(df.filter(pl.col("B") > 2).groupby("cars").agg(pl.sum("A")))
