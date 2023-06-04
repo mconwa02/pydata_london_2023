@@ -32,6 +32,8 @@
 
 [11_correlation_to_causation.md](11_correlation_to_causation.md)
 
+[12_taipy_for_web_app_data_science](12_taipy_for_web_app_data_science.md)
+
 ## Built using MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).

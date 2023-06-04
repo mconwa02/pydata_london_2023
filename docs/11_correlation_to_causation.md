@@ -26,3 +26,9 @@ In summary, this talk is divided into 3 parts:
 
 Steve Goodman has 20 years experience in data analytics and data science, 
 mostly in the fields of marketing, consulting and financial services. He is currently a Data Science Lead at Tide, a financial services platform based in London. He holds a PhD in Applied Statistics and a MBA.
+
+![direct_marketing.JPG](diagrams/direct_marketing.JPG)
+
+The book of why 
+
+https://en.wikipedia.org/wiki/The_Book_of_Why

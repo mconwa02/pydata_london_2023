@@ -2,6 +2,8 @@
 
 06-04, 10:15–10:55 (Europe/London), Salisbury
 
+https://github.com/pola-rs/dask-polars
+
 We're in a new era of dataframe development. Libraries like Arrow, Polars, DuckDB, Vaex, Modin, and others stretch the bounds of performance on what we think can be done with tabular data in Python. These systems have great benchmarking results and generate significant buzz on social media.
 
 Pandas, the community favorite, is also innovating, although with less buzz. Structural improvements like Arrow data types, copy on write, and more bring the world's most popular dataframe library (55% of Python users) into significantly better performance and memory use. Additionally Dask, a parallel computing library developed closely with Pandas, has also added new features in the last year, like memory-stable shuffling, task queueing, and with recent experiments in query optimization which we'll discuss as well.

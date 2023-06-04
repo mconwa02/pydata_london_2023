@@ -11,3 +11,6 @@ nav:
   - PyData Executives: 07_pydata_for_executives.md
   - Fast API: 08_fast_ape.md
   - Pandas 2: 09_pandas_polar.md
+  - Dask: 10_new_dev_pandas_and_dask.md
+  - Correlation: 11_correlation_to_causation.md
+  - Taipy: 12_taipy_for_web_app_data_science.md
